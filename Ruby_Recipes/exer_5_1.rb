@@ -8,3 +8,14 @@
 # Abani Sen : Marks obtained 650 : First Division
 # Dora Pridle : Marks obtained 573
 # Use at least one iterator in the solution.
+h = {
+  "Abani Sen" => 650,
+  "Dora Pridle" => 573,
+  "Sana Chowdhury" => 824,
+  "Pritish Panda" => 732
+  }
+  h.each { |k, v|
+    str = ''
+    str = ' : First Division' if v > 599
+    puts "#{k} : Marks obtained #{v}#{str}"
+   }
